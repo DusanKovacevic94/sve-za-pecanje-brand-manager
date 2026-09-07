@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svezapecanje.rs/schemas/brand-manager-project.json",
+  "title": "Brand manager project configuration",
+  "type": "object",
+  "required": ["project", "application", "managed_assets", "core_palette"],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": ["name", "primary_locale", "working_language"]
+    },
+    "application": {
+      "type": "object",
+      "required": ["environment_variable", "default_relative_path"]
+    },
+    "managed_assets": {
+      "type": "array",
+      "minItems": 13,
+      "items": {
+        "type": "object",
+        "required": ["name", "source", "destination", "protected"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 },
+          "destination": { "type": "string", "minLength": 1 },
+          "protected": { "type": "boolean" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": { "protected": { "const": true } },
+              "required": ["protected"]
+            },
+            "then": { "required": ["sha256"] }
+          }
+        ]
+      }
+    },
+    "core_palette": {
+      "type": "object",
+      "required": ["pine", "orange", "cream", "ink", "white"],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^#[A-F0-9]{6}$"
+      }
+    }
+  }
+}

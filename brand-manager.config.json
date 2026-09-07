@@ -1,0 +1,103 @@
+{
+  "$schema": "./schemas/project-config.schema.json",
+  "project": {
+    "name": "Sve Za Pecanje",
+    "primary_locale": "sr-Latn-RS",
+    "working_language": "en"
+  },
+  "application": {
+    "environment_variable": "SZP_APP_REPO",
+    "default_relative_path": "../sve-za-pecanje"
+  },
+  "managed_assets": [
+    {
+      "name": "Primary logo",
+      "source": "assets/logos/logo.svg",
+      "destination": "frontend/public/brand/logo.svg",
+      "protected": true,
+      "sha256": "af4c020a16bd43d0e8336daead3604fd09037ea40e7b8d5c683c2bce619376b2"
+    },
+    {
+      "name": "Inverse logo",
+      "source": "assets/logos/logo-inverse.svg",
+      "destination": "frontend/public/brand/logo-inverse.svg",
+      "protected": true,
+      "sha256": "16cf2a6afa6c84482bfc099e367a804d623a8a02e61097b8a77080cd8c13d221"
+    },
+    {
+      "name": "Monochrome logo",
+      "source": "assets/logos/logo-monochrome.svg",
+      "destination": "frontend/public/brand/logo-monochrome.svg",
+      "protected": true,
+      "sha256": "359a45f581561abd914690825b5a73b502982676b7cbd6fac3e21437116236c5"
+    },
+    {
+      "name": "Standalone mark",
+      "source": "assets/logos/mark.svg",
+      "destination": "frontend/public/brand/mark.svg",
+      "protected": true,
+      "sha256": "cef75996a2a116bafd9f075d9956000508420b447446ec3a3aeb3faa11094007"
+    },
+    {
+      "name": "Browser icon",
+      "source": "assets/platform/icon.svg",
+      "destination": "frontend/src/app/icon.svg",
+      "protected": false
+    },
+    {
+      "name": "Apple touch icon",
+      "source": "assets/platform/apple-icon.svg",
+      "destination": "frontend/src/app/apple-icon.svg",
+      "protected": false
+    },
+    {
+      "name": "Open Graph artwork",
+      "source": "assets/social/opengraph-image.svg",
+      "destination": "frontend/src/assets/opengraph-image.svg",
+      "protected": false
+    },
+    {
+      "name": "Waterline motif",
+      "source": "assets/motifs/BrandWaterline.tsx",
+      "destination": "frontend/src/components/brand/BrandWaterline.tsx",
+      "protected": false
+    },
+    {
+      "name": "Icon SVG foundation",
+      "source": "assets/ui-icons/IconBase.tsx",
+      "destination": "frontend/src/components/icons/IconBase.tsx",
+      "protected": false
+    },
+    {
+      "name": "Category icons",
+      "source": "assets/ui-icons/brand-categories.tsx",
+      "destination": "frontend/src/components/icons/brand-categories.tsx",
+      "protected": false
+    },
+    {
+      "name": "Marketplace action icons",
+      "source": "assets/ui-icons/marketplace-actions.tsx",
+      "destination": "frontend/src/components/icons/marketplace-actions.tsx",
+      "protected": false
+    },
+    {
+      "name": "Navigation and communication icons",
+      "source": "assets/ui-icons/navigation-communication.tsx",
+      "destination": "frontend/src/components/icons/navigation-communication.tsx",
+      "protected": false
+    },
+    {
+      "name": "Status icons",
+      "source": "assets/ui-icons/status.tsx",
+      "destination": "frontend/src/components/icons/status.tsx",
+      "protected": false
+    }
+  ],
+  "core_palette": {
+    "pine": "#173F37",
+    "orange": "#EE9835",
+    "cream": "#F7F6F1",
+    "ink": "#16201D",
+    "white": "#FFFFFF"
+  }
+}

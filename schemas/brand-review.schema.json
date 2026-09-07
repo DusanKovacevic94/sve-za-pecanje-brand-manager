@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svezapecanje.rs/schemas/brand-review.json",
+  "title": "Structured brand review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["subject", "summary", "scores", "findings", "verdict"],
+  "properties": {
+    "subject": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose", "identity", "clarity", "consistency", "accessibility", "production"],
+      "properties": {
+        "purpose": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "identity": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "clarity": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "consistency": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "accessibility": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "production": { "type": "integer", "minimum": 1, "maximum": 5 }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["priority", "title", "observation", "impact", "recommendation", "acceptance_check"],
+        "properties": {
+          "priority": { "enum": ["P0", "P1", "P2", "P3"] },
+          "title": { "type": "string" },
+          "observation": { "type": "string" },
+          "impact": { "type": "string" },
+          "recommendation": { "type": "string" },
+          "acceptance_check": { "type": "string" }
+        }
+      }
+    },
+    "verdict": {
+      "enum": ["approve", "approve_with_notes", "revise", "reject"]
+    }
+  }
+}
+
