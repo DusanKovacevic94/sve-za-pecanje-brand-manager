@@ -42,6 +42,14 @@ class BrandManagerValidationTests(unittest.TestCase):
         self.assertFalse(VALIDATE.is_safe_relative_path("../logo.svg"))
         self.assertFalse(VALIDATE.is_safe_relative_path("/tmp/logo.svg"))
 
+    def test_crlf_source_cannot_generate_a_new_release_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "IconBase.tsx"
+            path.write_bytes(b"export const icon = 1;\r\n")
+            self.assertIn("CRLF checkout drift", VALIDATE.validate_asset_line_endings(path, path.name)[0])
+            path.write_bytes(b"export const icon = 1;\n")
+            self.assertEqual([], VALIDATE.validate_asset_line_endings(path, path.name))
+
     def test_sync_command_writes_then_detects_drift(self) -> None:
         config = VALIDATE.load_json(ROOT / "brand-manager.config.json")
         first_asset = config["managed_assets"][0]

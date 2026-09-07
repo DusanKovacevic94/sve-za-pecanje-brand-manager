@@ -104,8 +104,10 @@ def validate_repository(config: dict[str, Any]) -> list[str]:
                 source_path = ROOT / source
                 if not source_path.is_file():
                     errors.append(f"Canonical asset is missing: {source}")
-                elif source_path.suffix == ".svg":
-                    errors.extend(validate_svg(source_path, source))
+                else:
+                    errors.extend(validate_asset_line_endings(source_path, source))
+                    if source_path.suffix == ".svg":
+                        errors.extend(validate_svg(source_path, source))
 
             if not is_safe_relative_path(destination):
                 errors.append(f"managed_assets[{index}].destination must be a safe relative path")
@@ -137,6 +139,14 @@ def validate_repository(config: dict[str, Any]) -> list[str]:
             errors.append(str(error))
 
     return errors
+
+
+def validate_asset_line_endings(path: Path, display_path: str) -> list[str]:
+    # The repositories already require LF via .gitattributes. Fail before sync
+    # can mint a checkout-dependent receipt; never normalize protected hashes.
+    if path.suffix in {".svg", ".tsx"} and b"\r\n" in path.read_bytes():
+        return [f"Canonical asset has CRLF checkout drift: {display_path}; restore the LF checkout before syncing"]
+    return []
 
 
 def is_safe_relative_path(value: object) -> bool:
