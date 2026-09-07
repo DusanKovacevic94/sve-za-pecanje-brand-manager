@@ -18,6 +18,16 @@ respects the customer's time—not an advertising slogan generator.
 - Button labels use a clear action: `Postavi oglas`, `Sačuvaj`, `Pošalji poruku`.
 - Preserve Serbian characters: `č ć ž š đ`.
 
+## Website slogan and blog framing
+
+Per [BRD-0003](../decisions/BRD-0003-homepage-slogan-blog-scope.md), the main slogan is
+`Sve za pecanje na jednom mestu.` The homepage supporting copy is
+`Pretraži štapove, mašinice, varalice i drugu opremu.`
+
+The blog is not advice-only. Use a neutral `Blog` heading rather than framing the
+whole section as advice or practical guides. This does not restrict individual
+article topics or change the approved logo.
+
 ## Preferred product terms
 
 | Use | Avoid unless technically necessary |
@@ -41,4 +51,3 @@ helps them recover.
 
 Example: `Fotografija nije otpremljena. Pokušajte ponovo ili izaberite datoteku
 manju od 10 MB.`
-
