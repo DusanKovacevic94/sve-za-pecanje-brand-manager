@@ -1,0 +1,344 @@
+{
+  "layoutVersion": 1,
+  "checks": "bounds, JPEG dimensions/size, max length, width overflow, escaping, invisible controls, determinism, protected logo/font hashes",
+  "examples": [
+    {
+      "name": "editorial",
+      "titleCharacters": 28,
+      "descriptionCharacters": 82,
+      "lines": {
+        "title": [
+          "Kako izabrati prvu",
+          "mašinicu?"
+        ],
+        "description": [
+          "Veličina, prenos i kočnica: šta je važno pri izboru",
+          "opreme za tvoj način ribolova."
+        ]
+      },
+      "jpegBytes": 80746,
+      "geometry": [
+        {
+          "text": "Kako izabrati prvu",
+          "x": 206.5,
+          "y": 403,
+          "width": 667,
+          "height": 104
+        },
+        {
+          "text": "mašinicu?",
+          "x": 347.5,
+          "y": 495,
+          "width": 385,
+          "height": 104
+        },
+        {
+          "text": "Veličina, prenos i kočnica: šta je važno pri izboru",
+          "x": 167.5,
+          "y": 776,
+          "width": 745,
+          "height": 46
+        },
+        {
+          "text": "opreme za tvoj način ribolova.",
+          "x": 310.5,
+          "y": 825,
+          "width": 459,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "framed",
+      "titleCharacters": 28,
+      "descriptionCharacters": 82,
+      "lines": {
+        "title": [
+          "Kako izabrati prvu",
+          "mašinicu?"
+        ],
+        "description": [
+          "Veličina, prenos i kočnica: šta je važno pri izboru",
+          "opreme za tvoj način ribolova."
+        ]
+      },
+      "jpegBytes": 85859,
+      "geometry": [
+        {
+          "text": "Kako izabrati prvu",
+          "x": 206.5,
+          "y": 403,
+          "width": 667,
+          "height": 104
+        },
+        {
+          "text": "mašinicu?",
+          "x": 347.5,
+          "y": 495,
+          "width": 385,
+          "height": 104
+        },
+        {
+          "text": "Veličina, prenos i kočnica: šta je važno pri izboru",
+          "x": 167.5,
+          "y": 776,
+          "width": 745,
+          "height": 46
+        },
+        {
+          "text": "opreme za tvoj način ribolova.",
+          "x": 310.5,
+          "y": 825,
+          "width": 459,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "short",
+      "titleCharacters": 18,
+      "descriptionCharacters": 38,
+      "lines": {
+        "title": [
+          "Vidimo se na vodi."
+        ],
+        "description": [
+          "Novosti iz naše ribolovačke zajednice."
+        ]
+      },
+      "jpegBytes": 63231,
+      "geometry": [
+        {
+          "text": "Vidimo se na vodi.",
+          "x": 206,
+          "y": 449,
+          "width": 668,
+          "height": 104
+        },
+        {
+          "text": "Novosti iz naše ribolovačke zajednice.",
+          "x": 247,
+          "y": 776,
+          "width": 586,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "long",
+      "titleCharacters": 57,
+      "descriptionCharacters": 141,
+      "lines": {
+        "title": [
+          "Štapovi, mašinice i",
+          "varalice: priprema za",
+          "izlazak na vodu"
+        ],
+        "description": [
+          "Proveri spojeve, očisti opremu i izdvoji ono što nosiš.",
+          "Kratak pregled pripreme, od štapa i mašinice do",
+          "sitnog pribora koji se lako zaboravi."
+        ]
+      },
+      "jpegBytes": 117085,
+      "geometry": [
+        {
+          "text": "Štapovi, mašinice i",
+          "x": 188,
+          "y": 357,
+          "width": 704,
+          "height": 104
+        },
+        {
+          "text": "varalice: priprema za",
+          "x": 154.5,
+          "y": 449,
+          "width": 771,
+          "height": 104
+        },
+        {
+          "text": "izlazak na vodu",
+          "x": 258.5,
+          "y": 541,
+          "width": 563,
+          "height": 104
+        },
+        {
+          "text": "Proveri spojeve, očisti opremu i izdvoji ono što nosiš.",
+          "x": 135,
+          "y": 776,
+          "width": 810,
+          "height": 46
+        },
+        {
+          "text": "Kratak pregled pripreme, od štapa i mašinice do",
+          "x": 172.5,
+          "y": 825,
+          "width": 735,
+          "height": 46
+        },
+        {
+          "text": "sitnog pribora koji se lako zaboravi.",
+          "x": 270,
+          "y": 874,
+          "width": 540,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "diacritics",
+      "titleCharacters": 28,
+      "descriptionCharacters": 99,
+      "lines": {
+        "title": [
+          "Čuvar reke: đaci čiste",
+          "obalu"
+        ],
+        "description": [
+          "Č ć ž š đ — Đorđe kaže: „Sačuvajmo reku.” O ljudima,",
+          "druženju i događajima koji povezuju ribolovce."
+        ]
+      },
+      "jpegBytes": 86521,
+      "geometry": [
+        {
+          "text": "Čuvar reke: đaci čiste",
+          "x": 140,
+          "y": 403,
+          "width": 800,
+          "height": 104
+        },
+        {
+          "text": "obalu",
+          "x": 435,
+          "y": 495,
+          "width": 210,
+          "height": 104
+        },
+        {
+          "text": "Č ć ž š đ — Đorđe kaže: „Sačuvajmo reku.” O ljudima,",
+          "x": 139.5,
+          "y": 776,
+          "width": 801,
+          "height": 46
+        },
+        {
+          "text": "druženju i događajima koji povezuju ribolovce.",
+          "x": 186,
+          "y": 825,
+          "width": 708,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "punctuation",
+      "titleCharacters": 22,
+      "descriptionCharacters": 92,
+      "lines": {
+        "title": [
+          "Štap < 2 m & mašinica?"
+        ],
+        "description": [
+          "Doslovan tekst, ne HTML: „izbor” & „održavanje”.",
+          "Detalji za čitaoce, bez skrivenog sadržaja."
+        ]
+      },
+      "jpegBytes": 80171,
+      "geometry": [
+        {
+          "text": "Štap < 2 m & mašinica?",
+          "x": 116.5,
+          "y": 449,
+          "width": 847,
+          "height": 104
+        },
+        {
+          "text": "Doslovan tekst, ne HTML: „izbor” & „održavanje”.",
+          "x": 170.5,
+          "y": 776,
+          "width": 739,
+          "height": 46
+        },
+        {
+          "text": "Detalji za čitaoce, bez skrivenog sadržaja.",
+          "x": 216.5,
+          "y": 825,
+          "width": 647,
+          "height": 46
+        }
+      ]
+    },
+    {
+      "name": "limits",
+      "titleCharacters": 100,
+      "descriptionCharacters": 180,
+      "lines": {
+        "title": [
+          "Izbor niti i sitni pribor.",
+          "Izbor niti i sitni pribor.",
+          "Izbor niti i sitni pribor.",
+          "Izbor niti i sitni."
+        ],
+        "description": [
+          "Sitni pribor i niti za ribolov. Sitni pribor i niti za ribolov.",
+          "Sitni pribor i niti za ribolov. Sitni pribor i niti za ribolov.",
+          "Sitni pribor i niti za ribolov. Sitni pribor i niti"
+        ]
+      },
+      "jpegBytes": 127677,
+      "geometry": [
+        {
+          "text": "Izbor niti i sitni pribor.",
+          "x": 132,
+          "y": 311,
+          "width": 816,
+          "height": 104
+        },
+        {
+          "text": "Izbor niti i sitni pribor.",
+          "x": 132,
+          "y": 403,
+          "width": 816,
+          "height": 104
+        },
+        {
+          "text": "Izbor niti i sitni pribor.",
+          "x": 132,
+          "y": 495,
+          "width": 816,
+          "height": 104
+        },
+        {
+          "text": "Izbor niti i sitni.",
+          "x": 250,
+          "y": 587,
+          "width": 580,
+          "height": 104
+        },
+        {
+          "text": "Sitni pribor i niti za ribolov. Sitni pribor i niti za ribolov.",
+          "x": 134.5,
+          "y": 776,
+          "width": 811,
+          "height": 46
+        },
+        {
+          "text": "Sitni pribor i niti za ribolov. Sitni pribor i niti za ribolov.",
+          "x": 134.5,
+          "y": 825,
+          "width": 811,
+          "height": 46
+        },
+        {
+          "text": "Sitni pribor i niti za ribolov. Sitni pribor i niti",
+          "x": 214.5,
+          "y": 874,
+          "width": 651,
+          "height": 46
+        }
+      ]
+    }
+  ]
+}

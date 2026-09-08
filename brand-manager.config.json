@@ -11,6 +11,30 @@
   },
   "managed_assets": [
     {
+      "name": "Blog social card template",
+      "source": "assets/social/blog-card.svg",
+      "destination": "cms/assets/social/blog-card.svg",
+      "protected": false
+    },
+    {
+      "name": "Blog social card layout contract",
+      "source": "assets/social/blog-card-layout.json",
+      "destination": "cms/assets/social/blog-card-layout.json",
+      "protected": false
+    },
+    {
+      "name": "Social card Manrope font",
+      "source": "assets/fonts/Manrope-variable.ttf",
+      "destination": "cms/assets/social/Manrope-variable.ttf",
+      "protected": false
+    },
+    {
+      "name": "Social card font license",
+      "source": "assets/fonts/OFL.txt",
+      "destination": "cms/assets/social/OFL.txt",
+      "protected": false
+    },
+    {
       "name": "Primary logo",
       "source": "assets/logos/logo.svg",
       "destination": "frontend/public/brand/logo.svg",
