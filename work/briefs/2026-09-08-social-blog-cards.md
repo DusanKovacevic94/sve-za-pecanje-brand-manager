@@ -3,7 +3,7 @@
 - **Date:** 2026-09-08
 - **Owner:** Sve Za Pecanje product/editorial team
 - **Approver:** Site owner, following Brand Manager review
-- **Status:** template, renderer, copy fields, and private preview/download implemented — release handoff task 084 remains
+- **Status:** 080–084 locally complete and reviewed — production rollout requires separate authorization and hosted release gates
 
 ## Request
 
@@ -66,8 +66,8 @@ button. Platform-specific captions and clickable destinations belong to a later 
 - [x] CMS preview and downloaded image match; pending/stale edits are clearly handled.
 - [x] Draft renders cannot be fetched anonymously or leaked through public storage.
 - [x] Existing articles require no social setup and publication remains independent.
-- [ ] Final feature review and relevant repository validation are recorded (template
-  review is complete; CMS implementation/release checks remain).
+- [x] Final feature review and relevant repository validation are recorded in
+  [the 084 handoff review](../reviews/2026-09-08-social-preview-release.md).
 
 ## Assumptions and open decisions
 
