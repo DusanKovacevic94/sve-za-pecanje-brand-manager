@@ -3,7 +3,7 @@
 - **Date:** 2026-09-08
 - **Owner:** Sve Za Pecanje product/editorial team
 - **Approver:** Site owner, following Brand Manager review
-- **Status:** template reviewed — implementation tasks 081–084 remain
+- **Status:** template, renderer, and copy fields implemented — preview/release tasks 083–084 remain
 
 ## Request
 
@@ -65,7 +65,7 @@ button. Platform-specific captions and clickable destinations belong to a later 
 - [x] Short/long titles, long words, punctuation, and `č ć ž š đ` are covered.
 - [ ] CMS preview and downloaded image match; pending/stale edits are clearly handled.
 - [ ] Draft renders cannot be fetched anonymously or leaked through public storage.
-- [ ] Existing articles require no social setup and publication remains independent.
+- [x] Existing articles require no social setup and publication remains independent.
 - [ ] Final feature review and relevant repository validation are recorded (template
   review is complete; CMS implementation/release checks remain).
 
